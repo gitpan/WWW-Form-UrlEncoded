@@ -8,9 +8,6 @@ eg/bench.pl
 eg/bench_build.pl
 lib/WWW/Form/UrlEncoded.pm
 lib/WWW/Form/UrlEncoded/PP.pm
-lib/WWW/Form/UrlEncoded/XS.pm
-lib/WWW/Form/UrlEncoded/XS.xs
-lib/WWW/Form/UrlEncoded/ppport.h
 minil.toml
 t/00_compile.t
 t/01_parse.t

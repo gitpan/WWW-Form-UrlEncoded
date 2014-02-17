@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 BEGIN {
-    our $VERSION = "0.04";
+    our $VERSION = "0.10";
     our @EXPORT_OK = qw/parse_urlencoded build_urlencoded/;
 
     my $use_pp = $ENV{WWW_FORM_URLENCODED_PP};
@@ -53,7 +53,10 @@ WWW::Form::UrlEncoded - parser and builder for application/x-www-form-urlencoded
 
 WWW::Form::UrlEncoded provides application/x-www-form-urlencoded parser and builder.
 This module aims to have compatibility with other CPAN modules like 
-HTTP::Body's urlencoded parser. And aims be fast by XS implementation.
+HTTP::Body's urlencoded parser.
+
+This module try to use L<WWW::Form::UrlEncoded::XS> by default and fail to it, 
+use WWW::Form::UrlEncoded::PP instead
 
 =head2 Parser rules
 

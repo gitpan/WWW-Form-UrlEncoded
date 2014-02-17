@@ -45,6 +45,9 @@
          "requires" : {
             "Exporter" : "0",
             "perl" : "5.008001"
+         },
+         "suggests" : {
+            "WWW::Form::UrlEncoded::XS" : "0.10"
          }
       },
       "test" : {
@@ -57,14 +60,10 @@
    "provides" : {
       "WWW::Form::UrlEncoded" : {
          "file" : "lib/WWW/Form/UrlEncoded.pm",
-         "version" : "0.04"
+         "version" : "0.10"
       },
       "WWW::Form::UrlEncoded::PP" : {
          "file" : "lib/WWW/Form/UrlEncoded/PP.pm"
-      },
-      "WWW::Form::UrlEncoded::XS" : {
-         "file" : "lib/WWW/Form/UrlEncoded/XS.pm",
-         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -78,5 +77,5 @@
          "web" : "https://github.com/kazeburo/WWW-Form-UrlEncoded"
       }
    },
-   "version" : "0.04"
+   "version" : "0.10"
 }
