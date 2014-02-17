@@ -1,5 +1,5 @@
 ---
-abstract: 'parser for application/x-www-form-urlencoded'
+abstract: 'parser and builder for application/x-www-form-urlencoded'
 author:
   - 'Masahiro Nagano <kazeburo@gmail.com>'
 build_requires:
@@ -29,12 +29,12 @@ no_index:
 provides:
   WWW::Form::UrlEncoded:
     file: lib/WWW/Form/UrlEncoded.pm
-    version: 0.03
+    version: 0.04
   WWW::Form::UrlEncoded::PP:
     file: lib/WWW/Form/UrlEncoded/PP.pm
   WWW::Form::UrlEncoded::XS:
     file: lib/WWW/Form/UrlEncoded/XS.pm
-    version: 0.03
+    version: 0.04
 requires:
   Exporter: 0
   perl: 5.008001
@@ -42,4 +42,4 @@ resources:
   bugtracker: https://github.com/kazeburo/WWW-Form-UrlEncoded/issues
   homepage: https://github.com/kazeburo/WWW-Form-UrlEncoded
   repository: git://github.com/kazeburo/WWW-Form-UrlEncoded.git
-version: 0.03
+version: 0.04

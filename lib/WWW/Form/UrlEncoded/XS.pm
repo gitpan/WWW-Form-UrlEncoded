@@ -4,11 +4,12 @@ use strict;
 use warnings;
 use base qw/Exporter/;
 
-our $VERSION = 0.03;
-our @EXPORT_OK = qw/parse_urlencoded/;
+our $VERSION = 0.04;
+our @EXPORT_OK = qw/parse_urlencoded build_urlencoded/;
 
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
+
 
 1;
 
@@ -18,20 +19,24 @@ __END__
 
 =head1 NAME
 
-WWW::Form::UrlEncoded::XS - XS implementation of parser for application/x-www-form-urlencoded
+WWW::Form::UrlEncoded::XS - XS implementation of parser and builder for application/x-www-form-urlencoded
 
 =head1 SYNOPSIS
 
-    use WWW::Form::UrlEncoded::XS qw/parse_urlencoded/;
-
+    use WWW::Form::UrlEncoded::XS qw/parse_urlencoded build_urlencoded/;
+    
     my $query_string = "foo=bar&baz=param";
     my @params = parse_urlencoded($query_string);
     # ('foo','bar','baz','param')
+    
+    my $query_string = build_urlencoded('foo','bar','baz','param');
+    # "foo=bar&baz=param";
+
 
 =head1 DESCRIPTION
 
-WWW::Form::UrlEncoded::XS provides application/x-www-form-urlencoded parser that is implemented by XS.
-see L<WWW::Form::UrlEncoded>'s document.
+WWW::Form::UrlEncoded::XS provides application/x-www-form-urlencoded parser and builder 
+that is implemented by XS. see L<WWW::Form::UrlEncoded>'s document.
 
 =head1 LICENSE
 

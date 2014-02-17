@@ -5,6 +5,7 @@ META.json
 README.md
 cpanfile
 eg/bench.pl
+eg/bench_build.pl
 lib/WWW/Form/UrlEncoded.pm
 lib/WWW/Form/UrlEncoded/PP.pm
 lib/WWW/Form/UrlEncoded/XS.pm
@@ -12,7 +13,9 @@ lib/WWW/Form/UrlEncoded/XS.xs
 lib/WWW/Form/UrlEncoded/ppport.h
 minil.toml
 t/00_compile.t
-t/01_simple.t
-t/02_simple_pp.t
+t/01_parse.t
+t/02_parse_pp.t
+t/03_build.t
+t/04_build_pp.t
 META.yml
 MANIFEST

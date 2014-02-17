@@ -5,8 +5,8 @@ use strict;
 use warnings;
 
 BEGIN {
-    our $VERSION = "0.03";
-    our @EXPORT_OK = qw/parse_urlencoded/;
+    our $VERSION = "0.04";
+    our @EXPORT_OK = qw/parse_urlencoded build_urlencoded/;
 
     my $use_pp = $ENV{WWW_FORM_URLENCODED_PP};
 
@@ -36,19 +36,22 @@ __END__
 
 =head1 NAME
 
-WWW::Form::UrlEncoded - parser for application/x-www-form-urlencoded
+WWW::Form::UrlEncoded - parser and builder for application/x-www-form-urlencoded
 
 =head1 SYNOPSIS
 
-    use WWW::Form::UrlEncoded qw/parse_urlencoded/;
-
+    use WWW::Form::UrlEncoded qw/parse_urlencoded build_urlencoded/;
+    
     my $query_string = "foo=bar&baz=param";
     my @params = parse_urlencoded($query_string);
     # ('foo','bar','baz','param')
+    
+    my $query_string = build_urlencoded('foo','bar','baz','param');
+    # "foo=bar&baz=param";
 
 =head1 DESCRIPTION
 
-WWW::Form::UrlEncoded provides application/x-www-form-urlencoded parser.
+WWW::Form::UrlEncoded provides application/x-www-form-urlencoded parser and builder.
 This module aims to have compatibility with other CPAN modules like 
 HTTP::Body's urlencoded parser. And aims be fast by XS implementation.
 
@@ -110,6 +113,10 @@ WWW::Form::UrlEncoded parsed string in this rule.
 =item @param = parse_urlencoded($str:String)
 
 parse C<$str> and return Array that contains key-value pairs.
+
+=item $string = build_urlencoded(@param)
+
+build urlencoded string from C<@params>
 
 =back
 
