@@ -3,6 +3,7 @@ Changes
 LICENSE
 META.json
 README.md
+builder/MyBuilder.pm
 cpanfile
 eg/bench.pl
 eg/bench_build.pl
