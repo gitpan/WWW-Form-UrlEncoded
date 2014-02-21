@@ -1,5 +1,9 @@
 Revision history for Perl extension WWW-Form-UrlEncoded
 
+0.14 2014-02-21T04:21:03Z
+
+    - add build_urlencoded_utf8
+
 0.13 2014-02-18T07:59:59Z
 
     - supports a delimiter parameter
