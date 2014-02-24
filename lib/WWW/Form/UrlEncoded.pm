@@ -5,8 +5,8 @@ use strict;
 use warnings;
 
 BEGIN {
-    our $VERSION = "0.14";
-    our @EXPORT_OK = qw/parse_urlencoded build_urlencoded build_urlencoded_utf8/;
+    our $VERSION = "0.16";
+    our @EXPORT_OK = qw/parse_urlencoded parse_urlencoded build_urlencoded build_urlencoded_utf8/;
 
     my $use_pp = $ENV{WWW_FORM_URLENCODED_PP};
 
@@ -120,6 +120,10 @@ WWW::Form::UrlEncoded parsed string in this rule.
 =item @param = parse_urlencoded($str:String)
 
 parse C<$str> and return Array that contains key-value pairs.
+
+=item $param:ArrayRef = parse_urlencoded_arrayref($str:String)
+
+parse C<$str> and return ArrayRef that contains key-value pairs.
 
 =item $string = build_urlencoded(@param)
 

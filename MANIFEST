@@ -15,5 +15,7 @@ t/01_parse.t
 t/02_parse_pp.t
 t/03_build.t
 t/04_build_pp.t
+t/05_parse_arrayref.t
+t/06_parse_arrayref_pp.t
 META.yml
 MANIFEST

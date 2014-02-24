@@ -47,7 +47,7 @@
             "perl" : "5.008001"
          },
          "suggests" : {
-            "WWW::Form::UrlEncoded::XS" : "0.13"
+            "WWW::Form::UrlEncoded::XS" : "0.16"
          }
       },
       "test" : {
@@ -60,7 +60,7 @@
    "provides" : {
       "WWW::Form::UrlEncoded" : {
          "file" : "lib/WWW/Form/UrlEncoded.pm",
-         "version" : "0.14"
+         "version" : "0.16"
       },
       "WWW::Form::UrlEncoded::PP" : {
          "file" : "lib/WWW/Form/UrlEncoded/PP.pm"
@@ -77,5 +77,5 @@
          "web" : "https://github.com/kazeburo/WWW-Form-UrlEncoded"
       }
    },
-   "version" : "0.14"
+   "version" : "0.16"
 }
