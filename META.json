@@ -60,7 +60,7 @@
    "provides" : {
       "WWW::Form::UrlEncoded" : {
          "file" : "lib/WWW/Form/UrlEncoded.pm",
-         "version" : "0.16"
+         "version" : "0.17"
       },
       "WWW::Form::UrlEncoded::PP" : {
          "file" : "lib/WWW/Form/UrlEncoded/PP.pm"
@@ -77,5 +77,5 @@
          "web" : "https://github.com/kazeburo/WWW-Form-UrlEncoded"
       }
    },
-   "version" : "0.16"
+   "version" : "0.17"
 }
